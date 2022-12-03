@@ -12,7 +12,7 @@ height = st.number_input("Enter Height")
 weight = st.number_input("Enter Weight")
 
 # Dropdown input
-eyes = st.selectbox("Select Eye Colour", ("Blue", "Brown"))
+eyes = st.selectbox("Select Eye Colour", ("Blue", "Brown", "Red"))
 
 # If button is pressed
 if st.button("Submit"):
@@ -22,8 +22,8 @@ if st.button("Submit"):
     
     # Store inputs into dataframe
     X = pd.DataFrame([[height, weight, eyes]], 
-                     columns = ["Height", "Weight", "Eyes"])
-    X = X.replace(["Brown", "Blue"], [1, 0])
+                     columns = ["Height", "Weight", "Eye"])
+    X = X.replace(["Red","Brown", "Blue"], [2, 1, 0])
     
     # Get prediction
     prediction = clf.predict(X)[0]
