@@ -10,3 +10,6 @@ y = df["Species"]
 
 clf = LogisticRegression() 
 clf.fit(X, y)
+import joblib
+
+joblib.dump(clf, "clf.pkl")
