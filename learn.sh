@@ -1,1 +1,1 @@
-streamlit run model.py --server.enableCORS=false --server.headless true
+streamlit run model.py --server.enableCORS=false

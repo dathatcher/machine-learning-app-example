@@ -1,0 +1,1 @@
+streamlit run survey_model.py --server.enableCORS=false
