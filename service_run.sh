@@ -1,1 +1,0 @@
-streamlit run service_app.py --server.enableCORS=false
